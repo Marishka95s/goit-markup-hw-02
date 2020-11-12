@@ -1,0 +1,120 @@
+/* index.html Style colors:
+#212121 - main text color (h2, nav-links)
+#2196F3 - accent-color (Web in logos, hover/focus)
+#757575 -auxiliary text color (h3), mail+tel in header
+#F5F4FA - section bg-color
+#ECECEC - line between header and hero
+#FFFFFF 60% - footer mail
+#FFFFFF 100% - h1, footer adress, header and team bg
+#2F303A - banner, footer bg, 
+#000000 - Style in logos, +?? maybe later will be shadow in footer's logo 
+*/
+
+/* Portfolio-main Style colors:
+#212121 - main text color (h2, buttons)
+#2196F3 - accent-color (buttons hover/focus)
+#757575 - auxiliary text color (p)
+#F5F4FA - unhovered filters bg
+ #FFFFFF- project card bg
+#EEEEEE - project card's border
+*/
+:root {
+  --main-text-color: #212121;
+  --auxiliary-text-color: #757575;
+  --accent-color: #2196f3;
+  --section-bg-color: #f5f4fa;
+  --additional-color: #ffffff;
+  --second-additional-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Basic style settings*/
+body {
+  background-color: #ffffff;
+  color: var(--main-text-color);
+
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+
+  font-style: normal;
+}
+
+/* Logo */
+.logo {
+  color: #000000;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.bottom {
+  color: #ffffff;
+}
+.logo span {
+  color: var(--accent-color);
+}
+
+/* Site nav */
+.site-nav a {
+  color: var(--main-text-color);
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+.hover-item {
+  color: var(--accent-color);
+}
+
+/* Contact nav */
+.contact-nav a {
+  color: var(--auxiliary-text-color);
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contact-nav a:hover,
+.contact-nav a:focus {
+  color: var(--accent-color);
+}
+
+/*  */
+
+/* Footer */
+footer {
+  background-color: #2f303a;
+}
+address {
+  color: var(--additional-color);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+address a {
+  color: var(--second-additional-color);
+}
+
+/* Filter style */
+.button {
+  background-color: #f5f4fa;
+  color: #212121;
+}
+.button:hover,
+.button:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
